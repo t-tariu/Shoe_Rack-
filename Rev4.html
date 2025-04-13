@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shoe Rack</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+    }
+
+    /* 제목과 네비게이션 */
+    header {
+      position: relative;
+      text-align: center;
+      padding: 40px 0 20px;
+      font-size: 36px;
+      font-weight: bold;
+      background-color: #fff;
+    }
+
+    /* 소셜 아이콘 */
+    .social-icons {
+      position: absolute;
+      top: 41px;
+      right: 90px;
+      display: flex;
+      gap: 20px;
+    }
+
+    .social-icons img {
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+    }
+
+    hr {
+      border: none;
+      border-top: 2px solid #333;
+      margin: 0 100px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 60px;
+      padding: 20px 0;
+      background-color: #fff;
+      font-size: 20px;
+    }
+
+    /* 슬라이더 */
+    .slider {
+      width: 100%;
+      overflow: hidden;
+      margin-top: 40px;
+    }
+
+    .slider-track {
+      display: flex;
+      width: calc(420px * 12); /* 카드 12개 * 카드 너비 + 여백 */
+      animation: scroll 40s linear infinite;
+    }
+
+    .card {
+      flex: 0 0 400px;
+      height: 600px;
+      margin: 0 10px;
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .card img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    @keyframes scroll {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-5040px); /* 420px * 12 */
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    Shoe Rack
+    <div class="social-icons">
+      <img src="./img/insta.JPG" alt="Instagram">
+      <img src="./img/facebook.JPG" alt="Facebook">
+      <img src="./img/kakao.JPG" alt="KakaoTalk">
+    </div>
+  </header>
+  
+  <hr>
+  <nav>
+    <span>Shoes</span>
+    <span>Shirt</span>
+    <span>Pants</span>
+    <span>Acc</span>
+    <span>Hat</span>
+  </nav>
+
+  <div class="slider">
+    <div class="slider-track">
+      <div class="card"><img src="./img/dark_m.jpg"><h3>Jordan</h3><p>Jordan 1 Retro High OG Black Mocha</p></div>
+      <div class="card"><img src="./img/fossil.jpg"><h3>Nike</h3><p>Nike x Stussy Air Zoom Spiridon Cage 2 Fossil</p></div>
+      <div class="card"><img src="./img/gdforce.jpg"><h3>Nike</h3><p>Nike x Peaceminusone Air Force 1 Low Para-Noise 3.0 Black and Multicolor</p></div>
+      <div class="card"><img src="./img/gymred.jpg"><h3>Jordan</h3><p>Jordan 1 Retro High OG Gym Red</p></div>
+      <div class="card"><img src="./img/lacktoe.jpg"><h3>Jordan</h3><p>Jordan 1 Retro High OG Royal Toe</p></div>
+      <div class="card"><img src="./img/martin.jpg"><h3>Dr. Martens</h3><p>Dr. Martens 1461 Nappa Black</p></div>
+      <div class="card"><img src="./img/offwhite.jpg"><h3>Jordan</h3><p>Jordan 1 x Off-White Retro High University Blue</p></div>
+      <div class="card"><img src="./img/oni.jpg"><h3>Onitsuka Tiger</h3><p>Onitsuka Tiger Tokuten Black Pink</p></div>
+      <div class="card"><img src="./img/skai.jpg"><h3>Nike</h3><p>Nike x Sacai VaporWaffle Royal Fuchsia</p></div>
+      <div class="card"><img src="./img/solo.jpg"><h3>Converse</h3><p>Converse x Takahiromiyashita The Soloist All Star Disrupt CX Hi Black</p></div>
+      <div class="card"><img src="./img/stussy.jpg"><h3>Converse </h3><p>Converse x Stussy Chuck 70 High Natural Ivory</p></div>
+      <div class="card"><img src="./img/yeezy.jpg"><h3>Adidas</h3><p>Adidas Yeezy Boost 350 V2 Zebra 2022/2023</p></div>
+    </div>
+  </div>
+
+</body>
+</html>

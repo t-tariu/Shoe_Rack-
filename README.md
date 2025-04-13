@@ -8,3 +8,5 @@ File structure
 - /images/
     - shoe1.jpg
     - shoe2.jpg
+
+![image](https://github.com/user-attachments/assets/33d2002a-5695-4904-9e43-4a0b7a8e4c1a)
